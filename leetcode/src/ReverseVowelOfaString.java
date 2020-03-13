@@ -6,9 +6,7 @@ public class ReverseVowelOfaString {
 		char[] c = new char[size];
 		int count = 0;
 		while (i >= 0) {
-			if (s.charAt(i) == 'a' || s.charAt(i) == 'o' || s.charAt(i) == 'i' || s.charAt(i) == 'e'
-					|| s.charAt(i) == 'u' || s.charAt(i) == 'A' || s.charAt(i) == 'E' || s.charAt(i) == 'I'
-					|| s.charAt(i) == 'O' || s.charAt(i) == 'U') {
+			if (isVowel(s.charAt(i))) {
 				c[count++] = s.charAt(i);
 			}
 			i--;
@@ -17,9 +15,7 @@ public class ReverseVowelOfaString {
 		count = 0;
 		String ans = "";
 		while (i < size) {
-			if (s.charAt(i) == 'a' || s.charAt(i) == 'o' || s.charAt(i) == 'i' || s.charAt(i) == 'e'
-					|| s.charAt(i) == 'u' || s.charAt(i) == 'A' || s.charAt(i) == 'E' || s.charAt(i) == 'I'
-					|| s.charAt(i) == 'O' || s.charAt(i) == 'U') {
+			if (isVowel(s.charAt(i))) {
 				ans = ans + c[count];
 				++count;
 			} else {
@@ -28,5 +24,15 @@ public class ReverseVowelOfaString {
 			i++;
 		}
 		return ans;
+	}
+	private boolean isVowel(char c) {
+		if(c == 'a' || c == 'e' || c == 'i' || c == 'o'|| c=='u'){
+			return true;
+		}else if (c == 'A' || c == 'E' || c == 'I' || c == 'O'|| c=='U') {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 }
