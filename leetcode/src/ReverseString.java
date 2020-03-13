@@ -1,5 +1,3 @@
-package leetcode;
-
 class ReverseString {
 	public void reverseString(char[] s) {
 		int l = 0;

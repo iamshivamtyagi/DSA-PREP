@@ -1,5 +1,3 @@
-package leetcode;
-
 class TwoSum {
 	public int[] twoSum(int[] nums, int target) {
 		int[] a = new int[] { -1, -1 };

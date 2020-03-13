@@ -1,5 +1,3 @@
-package leetcode;
-
 class ReverseNumber {
 	public int reverse(int x) {
 		int t = x;
