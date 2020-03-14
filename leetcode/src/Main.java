@@ -8,8 +8,8 @@ public class Main {
 //		int[] b = new int[]{1,2,3,4,5,6,7};
 //		int ans[] = new TwoSum().twoSum(b,7);
 //		display(ans);
-		System.out.println(new ReverseVowelOfaString().reverseVowels("Hello"));
-
+//		System.out.println(new ReverseVowelOfaString().reverseVowels("Hello"));
+		System.out.println(new PalindromeNumber().isPalindrome(70));
 	}
 
 	public static void display(int[] z) {
