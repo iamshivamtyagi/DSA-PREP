@@ -9,7 +9,12 @@ public class Main {
 //		int ans[] = new TwoSum().twoSum(b,7);
 //		display(ans);
 //		System.out.println(new ReverseVowelOfaString().reverseVowels("Hello"));
-		System.out.println(new PalindromeNumber().isPalindrome(70));
+//		System.out.println(new PalindromeNumber().isPalindrome(70));
+//		int[] a = new int[] { 2, 0 };
+//		int[] b = new int[] { 3 };
+//		new MergeTwoSortedArray();
+//		MergeTwoSortedArray.merge(a, 1, b, 1);
+//		display(a);
 	}
 
 	public static void display(int[] z) {
