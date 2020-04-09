@@ -20,8 +20,9 @@ public class Main {
 
 //		int ans = SingleNumber.singleNumber(new int[] { 4, 1, 2, 1, 2 });
 //		System.out.println(ans);
-		
-		
+
+//		System.out.println(HappyNumber.isHappy(19));
+
 	}
 
 	public static void display(int[] z) {
