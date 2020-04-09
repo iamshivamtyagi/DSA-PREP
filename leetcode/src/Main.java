@@ -10,14 +10,18 @@ public class Main {
 //		display(ans);
 //		System.out.println(new ReverseVowelOfaString().reverseVowels("Hello"));
 //		System.out.println(new PalindromeNumber().isPalindrome(70));
-		int[] a = new int[] { -1, 0, 5, 10 };
+//		int[] a = new int[] { -1, 0, 5, 10 };
 //		int[] b = new int[] { 3 };
 //		new MergeTwoSortedArray();
 //		MergeTwoSortedArray.merge(a, 1, b, 1);
 //		display(a);
-		int[] b = SquareOfaSortedArray.sortedSquares(a);
-		display(b);
+//		int[] b = SquareOfaSortedArray.sortedSquares(a);
+//		display(b);
 
+//		int ans = SingleNumber.singleNumber(new int[] { 4, 1, 2, 1, 2 });
+//		System.out.println(ans);
+		
+		
 	}
 
 	public static void display(int[] z) {
