@@ -7,7 +7,7 @@ public class Main {
 //		new ReverseString().reverseString(a);
 //		display(a);
 
-//		int[] b = new int[]{1,2,3,4,5,6,7};
+		int[] b = new int[] { 0, 1, 0, 3, 12 };
 //		int ans[] = new TwoSum().twoSum(b,7);
 //		display(ans);
 
@@ -30,7 +30,8 @@ public class Main {
 //		System.out.println(HappyNumber.isHappy(19));
 
 //		System.out.println(MaximumSubarray.maximumSubarray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
-
+		MoveZero.moveZeroes(b);
+		display(b);
 	}
 
 	public static void display(int[] z) {
