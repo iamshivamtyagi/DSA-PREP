@@ -1,5 +1,10 @@
 class ReverseNumber {
-	public int reverse(int x) {
+
+	public static void main(String[] args) {
+		System.out.println(reverse(9987));
+	}
+
+	public static int reverse(int x) {
 		int t = x;
 		if (x < 0) {
 			t = t * -1;
