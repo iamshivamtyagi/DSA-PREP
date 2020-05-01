@@ -1,4 +1,13 @@
+package main_package;
+
 class TwoSum {
+
+	public static void main(String[] args) {
+		int[] b = new int[] { 0, 1, 0, 3, 12 };
+		int ans[] = new TwoSum().twoSum(b, 7);
+		display(ans);
+	}
+
 	public int[] twoSum(int[] nums, int target) {
 		// resultant array with default result
 		int[] a = new int[] { -1, -1 };
@@ -16,5 +25,11 @@ class TwoSum {
 			}
 		}
 		return a;
+	}
+
+	public static void display(int[] z) {
+		for (int i : z)
+			System.out.print(i + " ");
+		System.out.println();
 	}
 }

@@ -1,6 +1,12 @@
+package main_package;
 
 public class PalindromeNumber {
-	public boolean isPalindrome(int x) {
+
+	public static void main(String[] args) {
+		System.out.println(isPalindrome(70));
+	}
+
+	public static boolean isPalindrome(int x) {
 		int n = x, rem = 0, rev = 0;
 		// if given number is negative return false (can't be Palindrome)
 		if (x < 0) {

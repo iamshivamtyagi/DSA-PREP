@@ -1,3 +1,4 @@
+package main_package;
 
 public class MaximumSubarray {
 
@@ -12,6 +13,10 @@ public class MaximumSubarray {
 	 * Explanation: [4,-1,2,1] has the largest sum = 6.
 	 * 
 	 */
+
+	public static void main(String[] args) {
+		System.out.println(maximumSubarray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+	}
 
 	// Kadane's Algorithm
 	public static int maximumSubarray(int[] a) {

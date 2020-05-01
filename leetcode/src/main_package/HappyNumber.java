@@ -1,3 +1,5 @@
+package main_package;
+
 import java.util.ArrayList;
 
 public class HappyNumber {
@@ -25,6 +27,10 @@ public class HappyNumber {
 	 * 
 	 * 1^2 + 0^2 + 0^2 = 1
 	 */
+
+	public static void main(String[] args) {
+		System.out.println(isHappy(19));
+	}
 
 	public static boolean isHappy(int n) {
 		ArrayList<Integer> a = new ArrayList<Integer>();

@@ -1,3 +1,4 @@
+package main_package;
 
 public class SingleNumber {
 
@@ -12,6 +13,11 @@ public class SingleNumber {
 	 * 
 	 * Input: [4,1,2,1,2] --> Output: 4
 	 */
+
+	public static void main(String[] args) {
+		int ans = singleNumber(new int[] { 4, 1, 2, 1, 2 });
+		System.out.println(ans);
+	}
 
 	public static int singleNumber(int[] nums) {
 		int n = 0;

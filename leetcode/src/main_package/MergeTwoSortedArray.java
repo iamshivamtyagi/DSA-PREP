@@ -1,4 +1,14 @@
+package main_package;
+
 public class MergeTwoSortedArray {
+
+	public static void main(String[] args) {
+		int[] a = new int[] { -1, 0, 5, 10, 0 };
+		int[] b = new int[] { 3 };
+		merge(a, 4, b, 1);
+		display(a);
+	}
+
 	public static void merge(int[] a, int m, int[] b, int n) {
 		int l = 0, r = 0, size = a.length;
 		// loop to traverse primary array "a"
@@ -31,4 +41,9 @@ public class MergeTwoSortedArray {
 		a[idx] = data;
 	}
 
+	public static void display(int[] z) {
+		for (int i : z)
+			System.out.print(i + " ");
+		System.out.println();
+	}
 }

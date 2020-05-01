@@ -1,3 +1,4 @@
+package main_package;
 import java.util.HashSet;
 
 public class CountElements {

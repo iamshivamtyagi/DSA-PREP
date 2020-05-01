@@ -1,6 +1,13 @@
+package main_package;
 
 public class ReverseVowelOfaString {
-	public String reverseVowels(String s) {
+
+	public static void main(String[] args) {
+		System.out.println(reverseVowels("Hello"));
+
+	}
+
+	public static String reverseVowels(String s) {
 		int size = s.length();
 		int i = size - 1;
 		char[] c = new char[size]; // character array to store vowels of a string
@@ -33,7 +40,7 @@ public class ReverseVowelOfaString {
 		return ans;
 	}
 
-	private boolean isVowel(char c) {
+	private static boolean isVowel(char c) {
 		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
 			return true;
 		} else if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
