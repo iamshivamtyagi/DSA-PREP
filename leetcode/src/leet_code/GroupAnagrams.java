@@ -1,4 +1,5 @@
-package main_package;
+package leet_code;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,6 +8,8 @@ import java.util.List;
 public class GroupAnagrams {
 
 	/*
+	 * Problem ID : 49 (Medium)
+	 * 
 	 * Given an array of strings, group anagrams together.
 	 * 
 	 * Example:

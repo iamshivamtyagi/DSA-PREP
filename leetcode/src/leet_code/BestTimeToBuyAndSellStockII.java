@@ -1,8 +1,10 @@
-package main_package;
+package leet_code;
 
-public class BuyAndSellStockII {
+public class BestTimeToBuyAndSellStockII {
 
 	/*
+	 * Problem ID : 122 (Easy)
+	 * 
 	 * Say you have an array prices for which the ith element is the price of a
 	 * given stock on day i.
 	 * 

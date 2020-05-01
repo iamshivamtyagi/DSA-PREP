@@ -1,10 +1,12 @@
-package main_package;
+package leet_code;
 
 import java.util.ArrayList;
 
 public class HappyNumber {
 
 	/*
+	 * Problem Id : 202 (Easy)
+	 * 
 	 * Write an algorithm to determine if a number n is "happy".
 	 * 
 	 * A happy number is a number defined by the following process: Starting with

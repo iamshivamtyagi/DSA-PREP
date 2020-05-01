@@ -1,8 +1,11 @@
-package main_package;
+package leet_code;
 
-public class MoveZero {
+
+public class MoveZeroes {
 
 	/*
+	 * Problem ID : 283 (Easy)
+	 * 
 	 * Given an array nums, write a function to move all 0's to the end of it while
 	 * maintaining the relative order of the non-zero elements.
 	 * 

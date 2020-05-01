@@ -1,5 +1,18 @@
-package main_package;
-class ReverseNumber {
+package leet_code;
+
+class ReverseInteger {
+
+	/*
+	 * Problem ID : 7 (Easy)
+	 *  
+	 * Given a 32-bit signed integer, reverse digits of an integer.
+	 * 
+	 * Input: 123 -> Output: 321
+	 * 
+	 * Input: -123 -> Output: -321
+	 * 
+	 * Input: 120 -> Output: 21
+	 */
 
 	public static void main(String[] args) {
 		System.out.println(reverse(9987));

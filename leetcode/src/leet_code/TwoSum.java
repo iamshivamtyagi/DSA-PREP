@@ -1,14 +1,31 @@
-package main_package;
+package leet_code;
 
 class TwoSum {
 
+	/*
+	 * Problem ID : 1 (Easy)
+	 * 
+	 * Given an array of integers, return indices of the two numbers such that they
+	 * add up to a specific target.
+	 * 
+	 * You may assume that each input would have exactly one solution, and you may
+	 * not use the same element twice.
+	 * 
+	 * Example:
+	 * 
+	 * Given nums = [2, 7, 11, 15], target = 9,
+	 * 
+	 * Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
+	 *
+	 */
+
 	public static void main(String[] args) {
 		int[] b = new int[] { 0, 1, 0, 3, 12 };
-		int ans[] = new TwoSum().twoSum(b, 7);
+		int ans[] = twoSum(b, 7);
 		display(ans);
 	}
 
-	public int[] twoSum(int[] nums, int target) {
+	public static int[] twoSum(int[] nums, int target) {
 		// resultant array with default result
 		int[] a = new int[] { -1, -1 };
 

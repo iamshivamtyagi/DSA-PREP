@@ -1,8 +1,11 @@
-package main_package;
+package leet_code;
+
 
 public class SingleNumber {
 
 	/*
+	 * Problem ID : 136 (Easy)
+	 * 
 	 * Given a non-empty array of integers, every element appears twice except for
 	 * one. Find that single one.
 	 * 

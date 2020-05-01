@@ -1,6 +1,20 @@
-package main_package;
+package leet_code;
+
 
 public class ReverseVowelOfaString {
+
+	/*
+	 * Problem ID : 345 (Easy)
+	 * 
+	 * Write a function that takes a string as input and reverse only the vowels of
+	 * a string.
+	 * 
+	 * Input: "hello" Output: "holle"
+	 * 
+	 * Input: "leetcode" -> Output: "leotcede"
+	 * 
+	 * Note: The vowels does not include the letter "y".
+	 */
 
 	public static void main(String[] args) {
 		System.out.println(reverseVowels("Hello"));
