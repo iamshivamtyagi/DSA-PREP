@@ -89,5 +89,6 @@ public class FirstBadVersion extends VersionControl {
 
 		System.out.println(fbv.firstBadVersion(n));
 
+		s.close();
 	}
 }
