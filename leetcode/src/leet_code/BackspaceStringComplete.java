@@ -5,7 +5,7 @@ import java.util.Stack;
 public class BackspaceStringComplete {
 
 	/*
-	 * Problem Id : 844 (Easy) 
+	 * Problem Id : 844 (Easy)
 	 * 
 	 * Given two strings S and T, return if they are equal when both are typed into
 	 * empty text editors. # means a backspace character.
@@ -46,19 +46,25 @@ public class BackspaceStringComplete {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		System.out.println(backspaceCompare("a##c", "#a#c"));
 	}
 
-	public boolean backspaceCompare(String s, String t) {
+	public static boolean backspaceCompare(String s, String t) {
+		return completeOperation(s).equals(completeOperation(t));
+	}
+
+	public static char getChar(String s, int i) {
+		return s.charAt(i);
+	}
+
+	public static String completeOperation(String s) {
 
 		// stack to store the characters of the given string
 		Stack<Character> stack1 = new Stack<Character>();
-		Stack<Character> stack2 = new Stack<Character>();
 
 		// loop to traverse the String 's'
 		for (int i = 0; i < s.length(); ++i) {
-
 			// when character at index 'i' is '#', we remove recently inserted character
 			if (getChar(s, i) == '#' && !stack1.empty()) {
 				stack1.pop();
@@ -72,41 +78,7 @@ public class BackspaceStringComplete {
 				stack1.push(getChar(s, i));
 			}
 		}
-
-		// Same for String 't'
-		for (int i = 0; i < t.length(); ++i) {
-			if (getChar(t, i) == '#' && !stack2.empty()) {
-				stack2.pop();
-			} else if (getChar(t, i) == '#' && stack2.empty()) {
-
-			} else {
-				stack2.push(getChar(t, i));
-			}
-		}
-
-		// two string to store new string after performing backspace operation
-		String s1, t1;
-		s1 = "";
-		t1 = "";
-
-		// remove stack data and insert it in s1
-		while (!stack1.empty()) {
-			s1 += stack1.pop();
-		}
-		// remove stack data and insert it in t1
-		while (!stack2.empty()) {
-			t1 += stack2.pop();
-		}
-
-		// compare string and return binary conclusion accordingly
-		if (s1.equals(t1)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public char getChar(String s, int i) {
-		return s.charAt(i);
+		// return the string
+		return String.valueOf(stack1);
 	}
 }
