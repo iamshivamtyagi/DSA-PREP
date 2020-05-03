@@ -5,7 +5,7 @@ import java.util.Stack;
 public class BackspaceStringComplete {
 
 	/*
-	 * Problem Id : 844 (Easy)
+	 * Problem Id : 844 (Easy) 
 	 * 
 	 * Given two strings S and T, return if they are equal when both are typed into
 	 * empty text editors. # means a backspace character.
