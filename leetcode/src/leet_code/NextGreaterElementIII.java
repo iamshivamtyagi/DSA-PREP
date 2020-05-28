@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class NextGreaterElementIII {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println(nextGreaterElement(12));
 	}
 
@@ -15,8 +15,6 @@ public class NextGreaterElementIII {
 
 		int[] a = new int[digits];
 
-		
-		
 		Arrays.sort(a);
 
 		reverseArray(a);
@@ -28,14 +26,6 @@ public class NextGreaterElementIII {
 		else
 			return -1;
 
-	}
-	
-	public static int formDigits(int[] a) {
-		int n = 0;
-		for (int i : a) {
-			n = n * 10 + i;
-		}
-		return n;
 	}
 
 	public static int formDigits(int[] a) {
