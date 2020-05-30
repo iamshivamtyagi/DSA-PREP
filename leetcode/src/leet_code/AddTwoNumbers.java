@@ -123,7 +123,7 @@ public class AddTwoNumbers {
 				carry = 0;
 			}
 
-			// return the head
+			// return head
 			return head;
 		}
 	}
