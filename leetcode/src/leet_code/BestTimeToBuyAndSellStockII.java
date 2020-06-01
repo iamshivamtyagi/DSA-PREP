@@ -32,7 +32,7 @@ public class BestTimeToBuyAndSellStockII {
 
 	public static void main(String[] args) {
 
-		System.out.println(maxProfit(new int[] { 1, 2, 3, 4, 5 }));
+		System.out.println(maxProfit(new int[] { 1, 2, 5,3, 4, 5 }));
 	}
 
 	private static int maxProfit(int[] prices) {
