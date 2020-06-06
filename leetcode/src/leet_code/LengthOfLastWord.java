@@ -50,9 +50,7 @@ public class LengthOfLastWord {
 			}
 			i++;
 		}
-
 		return wordLength;
-
 	}
 
 	/*
