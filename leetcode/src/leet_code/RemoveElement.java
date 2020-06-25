@@ -63,21 +63,29 @@ public class RemoveElement {
 		return mainIndex;
 	}
 
+	/*
+	 * This method eliminates unnecessary copy operation. Copy of the element only
+	 * when we find element equal to 'val'
+	 */
 	private static int removeElementOptimized(int[] a, int val) {
 
 		int i = 0;
-		int size = a.length;
+		int endIndex = a.length;
 
-		while (i < size) {
-
+		// iterate the element
+		while (i < endIndex) {
+			// swap element with endIndex and reduce endIndex by 1
 			if (a[i] == val) {
-				a[i] = a[--size];
-			} else {
+				a[i] = a[endIndex - 1];
+				--endIndex;
+			}
+			// move pointer to next index if current element not equal to val
+			else {
 				++i;
 			}
 		}
 
-		return size;
+		return endIndex;
 
 	}
 
