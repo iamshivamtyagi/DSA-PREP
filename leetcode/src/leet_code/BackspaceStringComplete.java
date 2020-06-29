@@ -46,7 +46,6 @@ public class BackspaceStringComplete {
 	 */
 
 	public static void main(String[] args) {
-
 		System.out.println(backspaceCompare("a##c", "#a#c"));
 	}
 
