@@ -32,8 +32,8 @@ public class SquareOfaSortedArray {
 
 	public static void main(String[] args) {
 
-		int[] a = new int[] { -1, 0, 5, 10 };
-		int[] b = SquareOfaSortedArray.sortedSquares(a);
+		int[] a = new int[] { -6, -4, 1, 2, 3, 5 };
+		int[] b = SquareOfaSortedArray.squareSortedArray(a);
 		display(b);
 	}
 
@@ -55,35 +55,43 @@ public class SquareOfaSortedArray {
 		System.out.println();
 	}
 
-	private static int[] squareSortedArray(int[] A) {
-		int N = A.length;
-		int j = 0;
-		while (j < N && A[j] < 0)
-			j++;
-		int i = j - 1;
+	/*
+	 * Idea : In sorted array, we know one thing that biggest negative number is on
+	 * left side and biggest positive number is on right side.
+	 * 
+	 * By two pointer approach, we point one pointer at starting index & other at
+	 * the last index.
+	 * 
+	 * We check which index have greater absolute value & then fill that element's
+	 * square in answer array from right to left.
+	 */
 
-		int[] ans = new int[N];
-		int t = 0;
+	private static int[] squareSortedArray(int[] a) {
 
-		while (i >= 0 && j < N) {
-			if (A[i] * A[i] < A[j] * A[j]) {
-				ans[t++] = A[i] * A[i];
-				i--;
+		int size = a.length;
+		int[] ans = new int[size];
+
+		int left = 0;
+		int right = size - 1;
+
+		int ansLastIdx = size - 1;
+
+		while (left <= right) {
+			int max = 0;
+
+			if (Math.abs(a[left]) > Math.abs(a[right])) {
+				max = a[left] * a[left];
+				left++;
 			} else {
-				ans[t++] = A[j] * A[j];
-				j++;
+				max = a[right] * a[right];
+				right--;
 			}
-		}
 
-		while (i >= 0) {
-			ans[t++] = A[i] * A[i];
-			i--;
-		}
-		while (j < N) {
-			ans[t++] = A[j] * A[j];
-			j++;
+			ans[ansLastIdx] = max;
+			ansLastIdx--;
 		}
 
 		return ans;
 	}
+
 }
