@@ -67,7 +67,7 @@ public class RemoveDuplicatesFromSortedArray {
 				continue;
 			}
 		}
-		
+
 		return newIndex + 1;
 	}
 
