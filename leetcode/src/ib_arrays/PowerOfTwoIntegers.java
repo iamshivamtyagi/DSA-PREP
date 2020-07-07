@@ -7,6 +7,8 @@ public class PowerOfTwoIntegers {
 
 	}
 
-	public static void 
-	
+	public static void powerOfInteger() {
+
+	}
+
 }
