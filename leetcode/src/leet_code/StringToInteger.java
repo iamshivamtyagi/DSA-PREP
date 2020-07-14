@@ -55,7 +55,7 @@ public class StringToInteger {
 	 */
 
 	public static void main(String[] args) {
-		System.out.println(myAtoi("    -88827   5655  U"));
+		System.out.println(myAtoi("1-2"));
 	}
 
 	public static int myAtoi(String str) {
