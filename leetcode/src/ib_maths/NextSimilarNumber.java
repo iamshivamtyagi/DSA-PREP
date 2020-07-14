@@ -30,6 +30,7 @@ public class NextSimilarNumber {
 	 * 
 	 * return new String(a); }
 	 */
+	
 	public static void swap(char[] a, int i, int j) {
 		char t = a[i];
 		a[i] = a[j];
