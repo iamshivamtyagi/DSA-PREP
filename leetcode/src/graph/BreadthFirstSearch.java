@@ -11,8 +11,8 @@ public class BreadthFirstSearch {
 		int[][] b = new int[][] { { 0, 1, 1, 0, 0, 0, 0 }, { 1, 0, 0, 1, 0, 0, 0 }, { 1, 0, 0, 1, 0, 0, 0 },
 				{ 0, 1, 1, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 1, 1 }, { 0, 0, 0, 0, 1, 0, 1 }, { 0, 0, 0, 0, 1, 1, 0 } };
 
-		// bfsWithSource(a, 5, 0);
-
+		bfsWithSource(a, 5, 0);
+		System.out.println();
 		bfsDis(b, 7);
 	}
 
