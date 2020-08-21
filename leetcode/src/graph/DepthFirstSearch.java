@@ -8,11 +8,13 @@ public class DepthFirstSearch {
 		int[][] b = new int[][] { { 0, 1, 1, 0, 0, 0, 0 }, { 1, 0, 0, 1, 0, 0, 0 }, { 1, 0, 0, 1, 0, 0, 0 },
 				{ 0, 1, 1, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 1, 1 }, { 0, 0, 0, 0, 1, 0, 1 }, { 0, 0, 0, 0, 1, 1, 0 } };
 
+		int[][] c = new int[][] { { 1, 1, 0 }, { 0, 0, 1 }, { 1, 0, 1, } };
+
 		dfs(a, 5, 0);
 		System.out.println();
 		dfsDisconnectedGraph(b, 7);
 		System.out.println();
-		System.out.println(countConnectedComponent(a, 5));
+		System.out.println(countConnectedComponent(c, 3));
 	}
 
 	private static void dfsRecursive(int[][] arr, int source, boolean[] visited) {

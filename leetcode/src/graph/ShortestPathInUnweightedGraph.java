@@ -4,8 +4,22 @@ import java.util.*;
 
 public class ShortestPathInUnweightedGraph {
 
+	static Scanner s = new Scanner(System.in);
+
 	public static void main(String[] args) {
-		int[][] a = new int[][] { { 0, 1, 1, 0 }, { 1, 0, 1, 1 }, { 1, 1, 0, 1 }, { 0, 1, 1, 0 } };
+		int[][] Ba = new int[][] { { 0, 1, 1, 0 }, { 1, 0, 1, 1 }, { 1, 1, 0, 1 }, { 0, 1, 1, 0 } };
+		
+		int V = s.nextInt();
+
+		ArrayList<ArrayList<Integer>> a = new ArrayList<ArrayList<Integer>>(V);
+
+		for (int i = 0; i < V; i++) {
+			a.add(new ArrayList<Integer>());
+			for (int j = 0; j < V; ++j) {
+				a.get(i).add(j)
+			}
+		}
+
 		display(shortestDistance(a, 1, 4));
 	}
 
