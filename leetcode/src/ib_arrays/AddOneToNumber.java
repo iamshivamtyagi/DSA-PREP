@@ -1,5 +1,4 @@
 package ib_arrays;
-
 public class AddOneToNumber {
 
 	/*
